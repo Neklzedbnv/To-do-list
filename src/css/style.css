@@ -1,0 +1,138 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #F5F7FA;
+        }
+
+        
+        header {
+            width: 100%;
+            background: white;
+            padding: 20px 40px;
+            border-bottom: 1px solid #E3E6EF;
+            display: flex;
+            align-items: center;
+        }
+
+        .nam {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .col {
+            color: #3B82F6;
+        }
+
+        
+        .layout {
+            display: flex;
+            gap: 40px;
+            padding: 30px 40px;
+        }
+
+        
+        .sidebar {
+            width: 260px;
+            background: #3B82F6;
+            border-radius: 15px;
+            color: white;
+            padding: 25px 20px;
+            height: calc(100vh - 120px);
+        }
+
+        .sidebar img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            
+        }
+
+        .sidebar p {
+            margin: 5px 0;
+            color: white;
+        }
+
+        #emi {
+            font-size: 13px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .sidebar li {
+            margin: 15px 0;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            background: white;
+            color: #3B82F6;
+        }
+
+        
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        main h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        
+        .content-box {
+            background: white;
+            border: 1px solid #E3E6EF;
+            border-radius: 15px;
+            padding: 30px;
+            min-height: 300px;
+        }
+
+        .add-btn {
+        background: #3B82F6;
+        color: white;
+        border: none;
+        padding: 14px 22px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: 0.25s ease-in-out;
+        box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+        }
+
+        .add-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(59, 130, 246, 0.35);
+        }
+
+        .add-btn .icon {
+            font-size: 20px;
+            font-weight: 700;
+        }
