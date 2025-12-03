@@ -102,6 +102,12 @@ body {
     gap: 25px;
 }
 
+.contents {
+    display: grid;
+    grid-template-columns: 100% ;
+    gap: 35px;
+    min-height: 75vh;
+}
 
 .todo-section {
     background: white;
@@ -273,4 +279,142 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+
+
+
+
+
+.create-category-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.create-category-container label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.category-input {
+    width: 50%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #c7c7c7;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.btn-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+
+.create-btn {
+    background-color: #35608d;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.create-btn:hover {
+    background-color: #3f72af;
+}
+
+
+.cancel-btn {
+    background-color: #fff;
+    color: #35608d;
+    border: 2px solid #35608d;
+    padding: 8px 25px;
+    border-radius: 6px;
+}
+
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+
+.popup-content {
+    background: #fff;
+    padding: 35px 40px;
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+    animation: showPopup .25s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.popup-content input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.save-btn {
+    background: #3f72af;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: white;
+    color: #3f72af;
+    border: 2px solid #3f72af;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@keyframes showPopup {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+.task-item {
+    background: #f8f9fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #e1e1e1;
 }

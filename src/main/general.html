@@ -2,10 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
+<header class="topbar">
+            <h2><span style="color: #3f72af;;">TO</span>-DO</h2>
+            <input type="text" placeholder="Search your task here..." class="search">
+
+            <div class="header-icons">
+                <span class="icon">🔔</span>
+                <span class="icon">📅</span>
+                <span class="date">20/06/2023</span>
+            </div>
+</header>
+
+<div class="container">
+
     
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="../assets/profile.jpg" class="avatar">
+            <h3>Abzal Bahtiyarov</h3>
+            <p>abzalbahtiyar@gmail.com</p>
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-item">Dashboard</a>
+            <a href="vital-task.html" class="nav-item">Vital Task</a>
+            <a href="my-task.html" class="nav-item">My Task</a>
+            <a href="category.html" class="nav-item">Task Categories</a>
+            <hr>
+            <br>
+            <a href="general.html" class="nav-item">New Task</a>
+        </nav>
+
+
+        
+    </aside>
+
+    
+    <main class="main">
+
+       
+
+        <div class="contents">
+            <div class="cont">
+                <h2>Create Task</h2>
+                <br>
+                <button type="button" id="addTaskBtn"><i class="fa-solid fa-plus"> Add New Task</i></button>
+                
+                <div id="taskList"></div>
+            </div>
+            
+            
+
+        </div>
+    </main>
+
+    
+
+</div>
+
+<div id="taskPopup" class="popup">
+    <div class="popup-content">
+        <h2>Create New Task</h2>
+
+        <label>Task Name</label>
+        <input type="text" id="taskName" placeholder="Enter task name">
+
+        <label>Category</label>
+        <input type="text" id="taskCategory" placeholder="Category">
+
+        <label>Deadline</label>
+        <input type="date" id="taskDate">
+
+        <div class="popup-buttons">
+            <button id="saveTaskBtn" class="save-btn">Save</button>
+            <button id="closePopupBtn" class="close-btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/script.js"></script>
+
 </body>
 </html>
